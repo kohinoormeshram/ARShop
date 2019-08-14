@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import ARKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var sceneView: ARSCNView!
+    
+    let config = ARWorldTrackingConfiguration()
+    
+    let itemsArray = ["cup", "vase", "boxing", "table"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.collectionView.dataSource = self
+        sceneView.debugOptions = [.showWorldOrigin, .showFeaturePoints]
+        self.sceneView.session.run(config)
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemsArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath)
+        return cell
+    }
 
 }
 
