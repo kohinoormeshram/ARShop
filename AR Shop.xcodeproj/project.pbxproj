@@ -13,6 +13,7 @@
 		142FCC41230408800056062A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142FCC40230408800056062A /* Assets.xcassets */; };
 		142FCC44230408800056062A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142FCC42230408800056062A /* LaunchScreen.storyboard */; };
 		142FCC4C230414B90056062A /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FCC4B230414B90056062A /* itemCell.swift */; };
+		14CF85992304215400985F5D /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CF85982304215400985F5D /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		142FCC43230408800056062A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142FCC45230408800056062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142FCC4B230414B90056062A /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		14CF85982304215400985F5D /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		142FCC382304087F0056062A /* AR Shop */ = {
 			isa = PBXGroup;
 			children = (
+				14CF85982304215400985F5D /* Models.scnassets */,
 				142FCC392304087F0056062A /* AppDelegate.swift */,
 				142FCC3B2304087F0056062A /* ViewController.swift */,
 				142FCC3D2304087F0056062A /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				142FCC44230408800056062A /* LaunchScreen.storyboard in Resources */,
+				14CF85992304215400985F5D /* Models.scnassets in Resources */,
 				142FCC41230408800056062A /* Assets.xcassets in Resources */,
 				142FCC3F2304087F0056062A /* Main.storyboard in Resources */,
 			);
